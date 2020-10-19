@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>myMap</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="map" id="ymaps"></div>
+    <div id="reviews" class="hidden">
+      <div id="reviews__header">
+          <div id="reviews__close">&#215;</div>
+      </div>
+      <div id="reviews__content">
+      </div>
+      <form id="reviews__form" method="POST">
+          <h3>Ваш отзыв</h3>
+          <input name="name" type="text" placeholder="Ваше имя">
+          <input name="place" type="text" placeholder="Укажите место">
+          <textarea name="comment" placeholder="Поделитесь впечатлениями"></textarea>
+          <button type="submit">Добавить</button>
+      </form>
+  </div>
+  </div>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=aac4369e-4473-49dc-955e-7e293fa92698&lang=en_US" type="text/javascript"></script>
+  <script src="./map.js" type="text/javascript"></script>
+
+</body>
+</html>
